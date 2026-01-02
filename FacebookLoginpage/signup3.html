@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Signup Clone</title>
+    <link rel="stylesheet" href="signup3.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="fb-card">
+            <h1>Create a new account</h1>
+            <p>It's quick and easy.</p>
+            <hr>
+            
+            <div class="name-row">
+                <input type="text" id="fname" placeholder="First name">
+                <input type="text" id="lname" placeholder="Last name">
+            </div>
+
+            <input type="text" id="email" placeholder="Mobile number or email address">
+            <input type="password" id="password" placeholder="New password">
+
+            <label class="label-text">Birthday</label>
+            <div class="dob-row">
+                <select id="day">
+                    <option value="0">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <select id="month">
+                    <option value="0">Month</option>
+                    <option value="1">Jan</option><option value="2">Feb</option>
+                </select>
+                <select id="year">
+                    <option value="0">Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
+
+            <label class="label-text">Gender</label>
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Custom">Custom</option>
+            </select>
+
+            <p id="msg"></p>
+
+            <button type="button" onclick="validateSignup()">Sign Up</button>
+        </div>
+    </div>
+    <script src="signup3.js"></script>
+</body>
+</html>

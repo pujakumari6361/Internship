@@ -1,0 +1,92 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const emailInput = document.getElementById("email");
+  const passwordInput = document.getElementById("password");
+  const loginButton = document.getElementById("loginBtn");
+  const message = document.getElementById("message");
+
+  loginButton.addEventListener("click",function() {
+
+    const email = emailInput.value;
+    const password = passwordInput.Value;
+
+    if(email === " "){
+      message.textContent = "Email is required";
+      displayColor.textContent = "";
+      message.style.color = "red";
+    }
+
+    else if (password === " ") {
+      message.textContent = "Enter password";
+      message.style.color = "red";
+    }
+
+    else {
+      message.textContent = "Signup successful";
+      message.style.color = "green";
+      localStorage.setItem("email",email);
+      localStorage.setItem("password",password);
+    }
+  });
+});
+
+
+
+
+
+//second program
+
+const loginBox = document.querySelector(".login-box");
+const inputs = loginBox.querySelectorAll("input");
+const button = loginBox.querySelector("button");
+const message = document.createElement("p");
+
+loginBox.appendChild(message);
+
+button.addEventListener("click", function () {
+  const email = inputs[0].value.trim();
+  const password = inputs[1].value.trim();
+
+  if (email === "") {
+    message.innerText = "Please enter email";
+    message.style.color = "red";
+  } 
+  else if (password === "") {
+    message.innerText = "Please enter password";
+    message.style.color = "red";
+  } 
+  else {
+    message.innerText = "Login successful";
+    message.style.color = "green";
+  }
+});
+
+
+
+
+
+function signup() {
+  const fname = document.getElementById("fname").value;
+  const lname = document.getElementById("lname").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const msg = document.getElementById("msg");
+
+  if (fname === "" || lname === "" || email === "" || password === "") {
+    msg.innerText = "Please fill all the fields!";
+    msg.style.color = "red";
+  } else {
+    msg.innerText = "Signup successful!";
+    msg.style.color = "green";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+ 

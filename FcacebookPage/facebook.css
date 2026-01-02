@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+}
+
+.form {
+    box-sizing: border-box;
+}
+
+.main logo {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo {
+     color: #1877f2;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.signup-box {
+    text-align: center;
+    color: black;
+    background-color: #f0f2f5;
+}
+
+.main .row {
+    width: 350px;
+    background: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dateofbirth {
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+
+}
